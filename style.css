@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #43a047;
+}
