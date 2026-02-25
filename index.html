@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Comparison</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Salajase asukoha leidmine</h1>
+    <p>
+      Sisesta kaks asukohta Eesti kaardil (L_EST koordinaadid). Vastusena saad
+      teada, kumb nendest punktidest on salajasele asukohale linnulennult
+      lähemal. Pakkuda saab üks kord tunnis.
+    </p>
+
+    <form id="guessForm">
+      <div class="grid">
+        <input
+          type="number"
+          id="guess1"
+          placeholder="I X koordinaat"
+          step="any"
+          required
+        />
+        <input
+          type="number"
+          id="guess2"
+          placeholder="I Y koordinaat"
+          step="any"
+          required
+        />
+        <input
+          type="number"
+          id="guess3"
+          placeholder="II X koordinaat"
+          step="any"
+          required
+        />
+        <input
+          type="number"
+          id="guess4"
+          placeholder="II Y koordinaat"
+          step="any"
+          required
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
