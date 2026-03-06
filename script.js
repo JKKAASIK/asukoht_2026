@@ -2,8 +2,8 @@ const form = document.getElementById("guessForm");
 const message = document.getElementById("message");
 
 // example secret targets
-const vastus_X = 6472004.0;
-const vastus_Y = 659919.0;
+const vastus_X = 58.359231;
+const vastus_Y = 26.732391;
 
 // how many hours between submissions
 const cooldownHours = 1;
