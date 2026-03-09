@@ -1,6 +1,8 @@
 const form = document.getElementById("guessForm");
 const message = document.getElementById("message");
 
+
+
 // example secret targets
 const vastus_X = 58.359231;
 const vastus_Y = 26.732391;
@@ -42,9 +44,18 @@ form.addEventListener("submit", (e) => {
   const g3 = Number(document.getElementById("guess3").value);
   const g4 = Number(document.getElementById("guess4").value);
 
+  function approxDistance(lat1, lon1, lat2, lon2) {
+    const latRad = lat1 * Math.PI / 180;
+
+    const dx = (lon2 - lon1) * Math.cos(latRad);
+    const dy = (lat2 - lat1);
+
+    return Math.sqrt(dx*dx + dy*dy);
+}
+
   // compare each row
-  const kaugus_1 = ((g1 - vastus_X) ** 2 + (g2 - vastus_Y) ** 2) ** (1 / 2);
-  const kaugus_2 = ((g3 - vastus_X) ** 2 + (g4 - vastus_Y) ** 2) ** (1 / 2);
+  const kaugus_1 = approxDistance((g1,g2,vastus_X,vastus_Y);
+  const kaugus_2 = approxDistance((g3,g4,vastus_X,vastus_Y);
   if (kaugus_1 < kaugus_2) {
     message.textContent = "I asukoht on lähemal kui II";
     message.style.color = "green";
